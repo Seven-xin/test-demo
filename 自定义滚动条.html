@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>自定义滚动条</title>
+		<style type="text/css">
+			ul {
+				height: 300px;
+				width: 500px;
+				margin: 150px auto;
+				overflow: auto;
+				background: #fff100;
+			}
+			li {
+				height: 100px;
+				width: 100%;
+			}
+			
+			ul::scrollbar-face-color {
+				color: red;
+			}
+			
+			 ul::-webkit-scrollbar-button    {
+		        background-color:red;
+		    }
+			
+			
+			/* 滚动条宽度 */
+			 ul::-webkit-scrollbar {
+		        width:20px;
+		    }
+		    
+		    /* 滚动条上下方向键 */
+		    ul::-webkit-scrollbar-button    {
+		        background-color:#FF66D5;
+		        width: 20px;
+		        height: 20px;
+		    }
+		    
+		    
+		    /* 滚动条内部颜色  内嵌颜色 */
+		    ul::-webkit-scrollbar-track     {
+		        background:red;
+		    }
+		    ul::-webkit-scrollbar-track-piece {
+		        /*background:url(img/essay2-banner.png) no-repeat 100%;*/
+		    }
+		    
+		    /* 滚动条同安滑条 */
+		    ul::-webkit-scrollbar-thumb{
+		        background:green;
+		        border-radius:4px;
+		    }
+		    ul::-webkit-scrollbar-corner {
+		        /*background: yellow;*/
+		    }
+		    ul::-webkit-scrollbar-resizer  {
+		        background: red;
+		    }
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</body>
+</html>

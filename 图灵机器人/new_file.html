@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>图灵机器人</title>
+		<link rel="stylesheet" type="text/css" href="tuling.css"/>
+	</head>
+	<body>
+		<div class="box">
+			<!-- 左边标签 -->
+			<div class="tag">
+				<div class="headImg">
+					<i></i>
+					<p>图图</p>
+				</div>
+				<ul class="tag-info">
+					<li>
+						<p> 喜欢的事 </p>
+						<ul>
+							<li class="borderBlue">爱聊天</li>
+							<li class="borderY">见义勇为</li>
+							<li class="borderG">工作狂</li>
+							<li class="borderP">唱歌</li>
+						</ul>
+					</li>
+					<li>
+						<p> 讨厌的事 </p>
+						<ul>
+							<li class="borderBlue">被冤枉</li>
+							<li class="borderY">无所事事</li>
+							<li class="borderG">没钱花</li>
+							<li class="borderP">吵架</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- 中间聊天框 -->
+			<div class="chat">
+				<div class="chat-box">
+					<div class="msg-left robot">
+						<div class="chat-headImg fl"></div>
+						<p class="fl">哈喽 , 你陪我骚聊一会吧!</p>
+					</div>
+					<!--<div class="msg-right">
+						<div class="chat-headImg-admin fr">
+							<img src="img/jinmu.jpg"/>
+						</div>
+						<p class="fr">骚货 , 我来了!</p>
+					</div>-->
+				</div>
+				<div class="inputbox">
+					<div class="inputbox-list">
+						<input type="text" id="input"/>
+						<input type="button" id="btn" value="发   送"/>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 右边的快捷方式 -->
+			<div class="example">
+				<ul>
+					<li> <i></i> <p>聊天</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>你好，你是美女么？</li>
+									<li>挖掘技术哪家强？</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>笑话</p> 
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>讲个笑话</li>
+									<li>冷笑话</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>图片</p> 
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>不好意思暂时显示不了图片</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>天气</p> 
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>重庆的天气</li>
+									<li>北京的天气</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>问答</p> 
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>地球到月球的距离</li>
+									<li>你是男是女</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>百科</p> 
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>百科周杰伦</li>
+									<li>百科魑魅魍魉</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>故事</p> 
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>讲个故事</li>
+									<li>小红帽的故事</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>新闻</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>显示不了新闻</li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+					<li> <i></i> <p>菜谱</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>显示不了菜谱</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>星座</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>星座</li>
+									<li>处女座</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>吉凶</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>10086吉凶</li>
+									<li>欠下五百万出门安全吗</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>运算</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>1+1</li>
+									<li>3+2-5*0</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>快递</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>快递</li>
+									<li>查水表</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>飞机</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>飞机</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>列车</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>火车</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li> <i></i> <p>成语接龙</p>
+						<div class="example-list">
+							<div class="ex-cont">
+								<div class="example-list-title">
+									<p>你可以这样问我</p>
+									<span class="ex-cont-list">x</span>
+								</div>
+								<ul class="example-list-cont">
+									<li>成语接龙</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		//  获取按钮
+		var oBtn = document.querySelector('#btn');
+		//  获取input里面的值
+		var oInput = document.querySelector('#input');
+		//  获取聊天框
+		var chat_box = document.querySelector('.chat-box');
+		chat_box.scrollTop = chat_box.scrollHeight;
+		//  点击发送 聊天框显示发送内容（input输入框的内容）
+		oBtn.onclick = function(){
+			post();
+		}
+		
+		document.onkeydown = function(event){
+			var ev = event || window.event;
+			if(ev.keyCode == 13){
+				post();
+			}
+			
+		}
+		
+		function post (){
+			var oInfo =oInput.value;
+			chat_box.innerHTML += `<div class="msg-right cl"> <div class="chat-headImg-admin fr"><img src="img/jinmu.jpg"/></div> <p class="fr">`+oInfo+`</p> </div>`;
+			oInput.value = '';
+			//  ajax
+			//  创建对象
+			var xhr ;
+			if(window.XMLHttpRequest){
+				xhr = new XMLHttpRequest();
+			}else {
+				xhr = new ActiveXObject();
+			}
+			//  接收ajax请求
+			var url = "http://www.tuling123.com/openapi/api?key=58293807907748a5b4bda52e058943b2";
+			url = url+"&info="+oInfo;
+			url = url+"&userid=1234";
+//			console.log(url);
+			xhr.open('GET',url,true);
+			xhr.send();
+			
+			//  请求响应
+			xhr.onreadystatechange = function(){
+				if(xhr.status==200 && xhr.readyState ==4){
+					chat_box.innerHTML += `<div class="msg-left cl"> <div class="chat-headImg fl"></div> <p class="fl">`+JSON.parse(xhr.responseText).text+`</p> </div>`;
+					//  让滚动条保持在底部
+					chat_box.scrollTop = chat_box.scrollHeight;
+				}
+			}
+		}
+		
+		//  获取右边快捷键的li
+		var aLi = document.querySelectorAll('.example>ul>li'); 
+		//  做循环 将所有的li遍历出来
+		for(var i=0;i<aLi.length;i++){
+			var oBtn;
+			var oCont;
+			aLi[i].index = i;
+			
+			aLi[i].addEventListener('click',function(){
+				//  将二级列表现出来
+				oCont = aLi[this.index].querySelector('.example-list');
+				oCont.style.display = 'block';
+				
+				
+				//  找到列表里面的按钮
+				oBtn = oCont.querySelector('.ex-cont-list');
+				//console.log(oBtn);
+				var that = aLi[this.index];
+				
+				oBtn.addEventListener('click',function(){
+					that.childNodes[5].style.display = 'none';
+				},true)
+				
+				//  获取列表里的内容.点击聊天
+				var list = oCont.querySelectorAll('.example-list-cont li ');
+//				console.log(list);
+				for(var i=0;i<list.length;i++){
+					list[i].num = i ;
+					list[i].onclick = function(){
+						var list_msg = list[this.num].innerHTML;
+//						console.log(list_msg);
+						chat_box.innerHTML += `<div class="msg-right cl"> <div class="chat-headImg-admin fr"><img src="img/jinmu.jpg"/></div> <p class="fr">`+list_msg+`</p> </div>`;
+						oCont.style.display = 'none';
+						
+						var xhr ;
+						if(window.XMLHttpRequest){
+							xhr = new XMLHttpRequest();
+						}else {
+							xhr = new ActiveXObject();
+						}
+						//  接收ajax请求
+						var url = "http://www.tuling123.com/openapi/api?key=58293807907748a5b4bda52e058943b2";
+						url = url+"&info="+list_msg;
+						url = url+"&userid=1234";
+			//			console.log(url);
+						xhr.open('GET',url,true);
+						xhr.send();
+						
+						//  请求响应
+						xhr.onreadystatechange = function(){
+							if(xhr.status==200 && xhr.readyState ==4){
+								chat_box.innerHTML += `<div class="msg-left cl"> <div class="chat-headImg fl"></div> <p class="fl">`+JSON.parse(xhr.responseText).text+`</p> </div>`;
+								//  让滚动条保持在底部
+								chat_box.scrollTop = chat_box.scrollHeight;
+							}
+						}
+					}
+				}
+			},true)
+		}
+		
+	</script>
+</html>
+
+<!--
+	捕获
+	
+	冒泡
+	
+	
+	
+-->

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>  
+<head>  
+<meta charset="UTF-8">  
+<title>dateTimePicker</title>  
+  
+<link type="text/css" rel="stylesheet" href="css/skin.css"></link>  
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/bootstrap-datetimepicker.css"/>
+  
+</head>  
+<body>  
+            <div style="width:300px" class="input-group"><!-- 开始时间 -->  
+                    <span class="input-group-addon prev">开始时间</span>  
+                    <input type="text" class="form-control content cursor-pointer" id="startTime"  readonly s>  
+              </div>  
+                  
+              <div style="width:300px" class="input-group"><!-- 结束时间 -->  
+                    <span class="input-group-addon prev">结束时间</span>  
+                    <input type="text" class="form-control content cursor-pointer" id="endTime"  readonly >  
+              </div>  
+</body>  
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/bootstrap-datetimepicker.min.js" type="text/javascript" charset="utf-8"></script>
+      
+<script type="text/javascript">  
+        $("#startTime").datetimepicker({  
+            format: 'yyyy-mm-dd hh:ii:ss',  
+            minuteStep:1,  
+            minView:'hour',  
+            language: 'zh-CN',  
+            pickerPosition:'bottom-right',  
+            autoclose:true,  
+        }).on("click",function(){  
+            $("#startTime").datetimepicker("setEndDate",$("#endTime").val());  
+        });  
+  
+        $("#endTime").datetimepicker({  
+            format: 'yyyy-mm-dd hh:ii:ss',  
+            minuteStep:1,  
+            minView:'hour',  
+            language: 'zh-CN',  
+            autoclose:true,  
+            }).on("click",function(){  
+                $("#endTime").datetimepicker("setStartDate",$("#startTime").val());  
+            });  
+              
+         $(document).on("click","#endTime",function(){  
+                $('#endTime').datetimepicker('show');  
+            });  
+          
+        $(document).on("click","#startTime",function(){  
+            $('#startTime').datetimepicker('show');  
+        });  
+</script>  
+  
+</html>  

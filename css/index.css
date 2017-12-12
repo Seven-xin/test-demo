@@ -1,0 +1,22 @@
+*{ margin: 0; padding: 0; }
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} body{font:1.5em"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;}
+ul,li { list-style: none; }
+a { text-decoration: none; color: #333; }
+.warp { width: 63%; margin: 0 auto; }
+h1 { text-align: center; padding: 50px 0; font-size: 1.5em; }
+.kb-survey-item { margin-top: 30px; }
+h2 { font-size: 1.2em; }
+h2 span { color: #0066FF; }
+.kb-survey-item table { border-color: #ccc !important; border-width: 1px; width: 100%; margin-top: 40px; }
+table,th,td { height: 30px; }
+th { background: #e0e0e0; }
+tr:last-child{ background: #e0e0e0; }
+.kb-survey-item table th:nth-child(1) { width: 40%; }
+.kb-survey-item table th:nth-child(3) { width: 50%; }
+.kb-survey-item tr { border: none; }
+td { padding: 0 10px; }
+tr td:nth-child(2) { text-align: center; }
+tr:nth-child(2n+1) { background: #f9f9f9; }
+.progressbar { position: relative; width: 150px; height: 15px; border-radius: 8px; float: left; margin-top: 5px; margin-right: 10px; overflow: hidden; background: #e3e4e6; }
+.progressbar i { display: block; content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 20%; background: #29a4fa; }
+.chartbox { width: 67%; margin: 0 auto; }

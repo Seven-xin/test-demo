@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 300px;
+				height: 300px;
+				overflow: auto;
+				background: #ccc;
+			}
+			/*div::-webkit-scrollbar-thumb{
+		        background:red;
+		        border-radius:4px;
+		    }*/
+			p {
+				height: 100px;
+			}
+			
+			
+			div::scrollbar-face-color {
+				/*color: green;*/
+			}
+			
+			 div::-webkit-scrollbar-button    {
+		        /*background-color:#FF7677;*/
+		    }
+			
+			
+			/* 滚动条宽度 */
+			 div::-webkit-scrollbar {
+		        width:10px;
+		    }
+		    
+		    /* 滚动条上下方向键 */
+		    div::-webkit-scrollbar-button    {
+		        background-color:#FF66D5;
+		        width: 20px;
+		        height: 20px;
+		    }
+		    
+		    /* 滚动条内部颜色  内嵌颜色 */
+		    div::-webkit-scrollbar-track     {
+		        /*background:red;*/
+		    }
+		    div::-webkit-scrollbar-track-piece {
+		        /*background:url(img/essay2-banner.png) no-repeat 100%;*/
+		    }
+		    
+		    /* 滚动条同安滑条 */
+		    div::-webkit-scrollbar-thumb{
+		        background:green;
+		        border-radius:4px;
+		    }
+		    div::-webkit-scrollbar-corner {
+		        /*background: yellow;*/
+		    }
+		    div::-webkit-scrollbar-resizer  {
+		        background: red;
+		    }
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>1</p>
+			<p>2</p>
+			<p>3</p>
+			<p>4</p>
+			<p>5</p>
+			<p>5</p>
+		</div>
+	</body>
+</html>
